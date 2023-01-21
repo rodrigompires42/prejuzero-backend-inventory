@@ -1,1 +1,1 @@
-from app.schemas.inventory import Inventory, InventoryUpdate
+from app.schemas.inventory import Inventory, InventoryShow, InventoryUpdate

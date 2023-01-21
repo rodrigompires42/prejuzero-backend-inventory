@@ -20,3 +20,7 @@ class InventoryUpdate(BaseModel):
 
     class Config():
         orm_mode = True
+
+
+class InventoryShow(Inventory):
+    id: int
