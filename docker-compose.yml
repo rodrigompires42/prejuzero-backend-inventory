@@ -13,16 +13,16 @@ services:
     ports:
       - '54330:5432'
 
-  # backend:
-  #   container_name: inventory-backend
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile
-  #   command: bash -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 81"
-  #   ports:
-  #     - 8002:81
-  #   volumes:
-  #     - .:/app
-  #   depends_on:
-  #     - db
+  backend:
+    container_name: inventory-backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: bash -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 80"
+    ports:
+      - 8002:80
+    volumes:
+      - .:/app
+    depends_on:
+      - db
     
