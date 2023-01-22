@@ -1,6 +1,4 @@
-# PREJUZERO
-
-## Inventory Microservice
+# PREJUZERO - Inventory Microservice
 
 ## Running DB Migrations
 
@@ -8,4 +6,5 @@
 
 ## Running the Application
 
+`pip install -r requirement.txt`
 `uvicorn app.main:app --host <host> --port <port>`
